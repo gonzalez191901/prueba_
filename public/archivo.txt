@@ -1,0 +1,11 @@
+Nº Orden:  3_1
+
+Fecha: 2023-02-21 23:17:09
+
+Articulo: ARTICULO 3   
+
+Precio : $2.5
+
+Cantidad: 2
+
+Total: $5
