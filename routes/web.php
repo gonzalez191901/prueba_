@@ -19,7 +19,7 @@ use App\Http\Controllers\RickMortyController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('login');
 });
 
 Route::get('/dashboard', [OrderController::class, 'view'])->middleware(['auth', 'verified'])->name('dashboard');

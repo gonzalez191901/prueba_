@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2023 a las 03:20:56
+-- Tiempo de generación: 23-02-2023 a las 04:34:39
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -104,12 +104,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `numero_orden`, `monto`, `estado`, `id_detalle`, `id_user`, `created_at`, `updated_at`) VALUES
-(1, '3_1', 5, 1, 1, 3, '2023-02-22 03:17:09', '2023-02-22 03:17:09'),
-(2, '3_2', 5, 1, 2, 3, '2023-02-22 03:40:16', '2023-02-22 03:40:16'),
-(3, '3_30', 10, 1, 3, 3, '2023-02-22 03:56:49', '2023-02-22 03:56:49'),
-(4, '3_400000', 15, 1, 4, 3, '2023-02-22 03:57:33', '2023-02-22 03:57:33'),
-(5, '3_500000', 1.25, 1, 5, 3, '2023-02-22 04:27:03', '2023-02-22 04:27:04'),
-(6, '3_600000', 250, 1, 6, 3, '2023-02-22 04:50:23', '2023-02-22 04:50:24');
+(9, '3_100000', 4, 1, 9, 3, '2023-02-23 07:21:02', '2023-02-23 07:21:28');
 
 -- --------------------------------------------------------
 
@@ -122,7 +117,7 @@ CREATE TABLE `orders_detail` (
   `id_articulo` varchar(255) NOT NULL,
   `cantidad` int(11) NOT NULL,
   `precio` float NOT NULL,
-  `total` int(11) NOT NULL,
+  `total` float NOT NULL,
   `id_order` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
@@ -133,12 +128,7 @@ CREATE TABLE `orders_detail` (
 --
 
 INSERT INTO `orders_detail` (`id`, `id_articulo`, `cantidad`, `precio`, `total`, `id_order`, `created_at`, `updated_at`) VALUES
-(1, '3', 2, 2.5, 5, 1, '2023-02-22 03:17:09', '2023-02-22 03:17:09'),
-(2, '3', 2, 2.5, 5, 2, '2023-02-22 03:40:16', '2023-02-22 03:40:16'),
-(3, '3', 4, 2.5, 10, 3, '2023-02-22 03:56:49', '2023-02-22 03:56:49'),
-(4, '3', 6, 2.5, 15, 4, '2023-02-22 03:57:33', '2023-02-22 03:57:33'),
-(5, '1', 1, 1.25, 1, 5, '2023-02-22 04:27:04', '2023-02-22 04:27:04'),
-(6, '3', 100, 2.5, 250, 6, '2023-02-22 04:50:24', '2023-02-22 04:50:24');
+(9, '2', 2, 2, 4, 9, '2023-02-23 07:21:02', '2023-02-23 07:21:28');
 
 -- --------------------------------------------------------
 
@@ -278,13 +268,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `orders_detail`
 --
 ALTER TABLE `orders_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `personal_access_tokens`

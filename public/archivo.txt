@@ -1,11 +1,11 @@
-Nº Orden:  3_1
+Nº Orden:  3_100000
 
-Fecha: 2023-02-21 23:17:09
+Fecha: 2023-02-23 03:21:02
 
-Articulo: ARTICULO 3   
+Articulo: ARTICULO 2   
 
-Precio : $2.5
+Precio : $2
 
 Cantidad: 2
 
-Total: $5
+Total: $4

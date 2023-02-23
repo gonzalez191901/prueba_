@@ -22,9 +22,11 @@ class PdfController extends Controller
       foreach ($files as $qdoc => $file) {
 
         $ruta = '/public/';
-        Storage::putFileAs($ruta,$file,$file->getClientOriginalName());
+        
+        $arch = str_replace(" ","", $file->getClientOriginalName()); 
+        Storage::putFileAs($ruta,$file,$arch);
 
-        $archivos[] = ["archivo"=>$file->getClientOriginalName()];
+        $archivos[] = ["archivo"=>$arch];
 
 
       }
