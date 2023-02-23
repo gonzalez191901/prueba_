@@ -17,7 +17,6 @@
                   <nav aria-label="Page navigation example">
                       <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#" id="prev">Anterior</a></li>
-                      
                         <li class="page-item"><a class="page-link" href="#" id="next">Siguiente</a></li>
                       </ul>
                     </nav>
